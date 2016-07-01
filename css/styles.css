@@ -1,12 +1,7 @@
-body { background: #333; }
-
-img { border: 0; max-width: 100%; }
-
-.page-header h1 {
-  font-size: 3.26em;
-  text-align: center;
-  color: #efefef;
-  text-shadow: 1px 1px 0 #000;
+body { 
+	background: #333; 
+	position: relative;
+	height: 100%;
 }
 
 /** timeline box structure **/
@@ -140,7 +135,7 @@ img { border: 0; max-width: 100%; }
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-  z-index: 99999;
+  z-index: 20;
 }
 
 
@@ -184,7 +179,7 @@ img { border: 0; max-width: 100%; }
   ul.timeline li .tl-circ {
     top: 22px;
     left: 22px;
-    margin-left: 0;
+		margin: 0;
 
   }
   ul.timeline > li > .tldate {
@@ -210,6 +205,65 @@ img { border: 0; max-width: 100%; }
   }
 }
 
+/** You shouldn't be reading this. 
+It is a taboo to read someone else's CSS files.*/
+
+
+@font-face {
+  font-family: 'cuyabra-Bold';
+  src: url('../fonts/cuyabra-Bold.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/cuyabra-Bold.otf')  format('opentype'),
+	  url('../fonts/cuyabra-Bold.woff') format('woff'), 
+		url('../fonts/cuyabra-Bold.ttf')  format('truetype'), 
+		url('../fonts/cuyabra-Bold.svg#cuyabra-Bold') format('svg');
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'cuyabra-Regular';
+  src: url('../fonts/cuyabra-Regular.eot?#iefix') format('embedded-opentype'),  
+		url('../fonts/cuyabra-Regular.otf')  format('opentype'),
+		url('../fonts/cuyabra-Regular.woff') format('woff'), 
+		url('../fonts/cuyabra-Regular.ttf')  format('truetype'), 
+		url('../fonts/cuyabra-Regular.svg#cuyabra-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.navbar {
+	background-color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 12px;
+	letter-spacing: 2.3px;
+	opacity: 0.7;
+}
+.navbar li.active{
+	background-color: aqua;
+	color: aqua;
+}
+.navbar-nav li a:hover {
+	color: #1abc9c !important;
+}
+.image-container{
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	font-family: 'cuyabra-Regular';
+	width: 100%;
+	height: 600px;
+}
+#prof_pic{
+	height: 128px;	
+	width: 128px;
+	margin-top: 80px;
+}
+.first-heading{
+	font-size: 35px;
+	font-family: 'cuyabra-Bold';
+}
+
 
 .tl-date{
 	padding-left: 2%;
@@ -217,23 +271,35 @@ img { border: 0; max-width: 100%; }
 .timeline-panel{
   visibility : hidden;
 }
-
-#graph_canvas{
-	left: 50%;
-	height: 300px;
-	width: 100%;	
+mark{
+	background-color: lightyellow;
+	font-weight: bold;
 }
-
-.image-container{
-	vertical-align: top;
-	display: inline-block;
+.page-heading{
+	color: #FF3D5E;
 	text-align: center;
+	font-family: 'Unica One', sans-serif;
+	font-size: 50px;
+}
+#love-hate-chart{
+	margin-bottom: 0;
+}
+#about{
 	width: 100%;
+	height: 700px;
+	align-content: center;
+	border-top-style: solid;
+	border-top-width: thick;
+	border-top-color: #FFFFFF;
 }
-#prof_pic{
-	height: 128px;	
-	width: 128px;
+#contact{
+	max-height: 600px;
 }
-#caption{
-	display: block;
+#graph_canvas{
+	background-color: #2f2f2f;
+	left: 50%;
+	width: 100%;
+	max-height: 450px;
+	z-index: 1;
 }
+

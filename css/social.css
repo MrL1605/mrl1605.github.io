@@ -4,10 +4,12 @@
   width: 10em;
   height: 13em;
 	left: 50%;
+	bottom: 200px;
   margin: +6.5em 0 0 -5em;
   -webkit-backface-visibility: hidden;
   font-family: 'Ubuntu', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-align: center;
+  list-style: none;
 }
 
 .deck__item {
@@ -50,10 +52,10 @@
 }
 
 .deck__link {
-  text-decoration: none;
   display: block;
   color: white;
   color: rgba(255, 255, 255, 0.8);
+	font-size: 20px;
 }
 
 .deck__icon {
@@ -72,12 +74,7 @@
 
 .deck__item--github {
   background: #4183c4;
-  transform: rotate(-10deg);
-}
-
-.deck__item--twitter {
-  background: #00a0d1;
-  transform: rotate(0deg);
+  transform: rotate(-5deg);
 }
 
 .deck__item--linkedin {
@@ -85,12 +82,7 @@
   transform: rotate(10deg);
 }
 
-.deck__item--pinterest {
-  background: #910101;
-  transform: rotate(20deg);
-}
-
 .deck__item--googleplus {
   background: #db4a39;
-  transform: rotate(30deg);
+  transform: rotate(25deg);
 }

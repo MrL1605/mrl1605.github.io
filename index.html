@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Lalit Umbarkar</title>
@@ -7,54 +8,157 @@
     <meta name="author" content="Lalit Umbarkar">
     <link rel="stylesheet" type="text/css" media="all" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="./css/bootstrap-giphy.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" media="all" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" media="all" href="./css/animations.css">
     <link rel="stylesheet" type="text/css" media="all" href="./css/social.css">
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="./css/jquery.fullPage.css">
 
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="120">
 		
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Portfolio</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#home">Home</a></li>
-						<li><a href="#timeline">Timeline</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+		<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">Portfolio</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+		<div id="fullpage">
+		<div id="home" class="jumbotron section fp-section fp-table  fp-completely">
+			<div class="image-container">
+				<img id="prof_pic" class="img-circle img" alt="prof_pic" src="./img/crop_512.png"><br>
+				<h1>Hi</h1>
+				<h1 class="first-heading">I'm Lalit Umbarkar</h1>
+				<h3>I'm  creative and a coder.</h3>
 			</div>
-		</nav>
+		</div>
 
 		
-		<div id="home" class="jumbotron">
-			<div class="image-container">
-				<img id="prof_pic" class="img-circle img" alt="prof_pic" src="./img/randm_512.png"><br>
-				<h2 class="caption">Lalit Umbarkar</h2>
-				<h4 class="caption">Creative Coder</h4>
-			</div>
-		</div>
-<!--		
-		<div id="home" class="jumbotron">
-			<div class="container text-center">
-				<br><br><br> <h1>Lalit Umbarkar</h1>
-			</div>
-		</div>
--->
-		<div id="timeline" class="container">
+		<div id="timeline" class="container section">
+			<h1 class="page-heading">Timeline</h1>
 			<div class="row">
-			<ul class="timeline">
-        <li><div class="tldate">2013</div></li>
+				<ul class="timeline">
+					
+				<li><div class="tldate">2016</div></li>
+        
+        <li class="timeline-normal">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>First Published App</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Apr 2016</i></small></p>
+            </div>
+            <div class="tl-body">
+							<p>I published my first <mark>Android App</mark> on Play Store</p><p><a href="http://bit.ly/cert_mrl">Coursera Courses.</a></p>
+            </div>
+          </div>
+        </li>
+        
+				<li class="timeline-inverted">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>The First Rejection</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Feb 2016</i></small></p>
+            </div>
+            <div class="tl-body">
+							<p><mark>Microsoft</mark> rejected me for position at MSIDC as an Intern</p>
+            </div>
+          </div>
+        </li>
+        
+	
+					
+				<li><div class="tldate">2015</div></li>
+
+					
+				<li class="timeline-normal">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>No. Not startup this time.</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Dec 2015</i></small></p>
+            </div>
+            <div class="tl-body">
+							<p>Got an Internship in <mark>Indian Oil</mark> as Developer. Developed Android Application to determine local IP of different stations of IOCL</p><p>Created a ASP.NET Web Application for local Inventory Management.</p><p>Improvements on existing PHP application.</p>
+            </div>
+          </div>
+        </li>
+        
+        <li class="timeline-inverted">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Next StartUp</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Feb 2015</i></small></p>
+            </div>
+            <div class="tl-body">
+              <p>Became a part of <mark>Transity</mark> and implemented different components of Android App with other group members.</p><p>This is where my Android skills skyrocketed.</p>
+            </div>
+          </div>
+        </li>
+        
+					
+				<li><div class="tldate">2014</div></li>
+        
+        <li class="timeline-inverted">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Becoming a Startup-er</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Nov 2014</i></small></p>
+            </div>
+            <div class="tl-body">
+              <p>Joined <mark>CorpsInsights</mark> and worked as an Analytics Engineer.</p><p>Implemented the product's backend algorithms for analyzing data.</p><p>Worked on Python Pandas and R. Predicted customer behaviour from past data of customers using R package.</p>
+            </div>
+          </div>
+        </li>
+
+				<li class="timeline-normal">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Becoming MTA Certified</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Sept 2014</i></small></p>
+            </div>
+            <div class="tl-body">
+              <p>Obtained a certiication from Microsoft for <mark>Microsoft Technical Assistant</mark></p>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div class="tl-circ"></div>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Year of Enlightment</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">Feb 2014</i></small></p>
+            </div>
+            <div class="tl-body">
+							<p>As a Fresher in IT, I was taught <mark>C</mark> and <mark>C++</mark> as it was included in my ciriculum.</p><p>I soon got fond of programming, so to start with I learned <mark>Python</mark> during my free hours and with it learned different coding conventions through different <mark><a href="http://bit.ly/cert_mrl">Coursera Courses.</a></mark></p>
+            </div>
+          </div>
+        </li>
+        
+        
+				<li><div class="tldate">2013</div></li>
         
         <li class="timeline-normal">
           <div class="tl-circ"></div>
@@ -64,167 +168,58 @@
               <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">May 2013</i></small></p>
             </div>
             <div class="tl-body">
-              <p>Joined Vellore Institute of Technology and started my career in Information Technology as a newbie.</p><p>Had a lot o fun too.</p>
+              <p>Joined <mark>Vellore Institute of Technology</mark> and started my career in Information Technology as a newbie.</p><p>Had a lot of fun too.</p>
             </div>
           </div>
         </li>
-        
-        <li class="timeline-inverted">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Year Of Enlightment</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i class="tl-date">May 2014</i></small></p>
-            </div>
-            <div class="tl-body">
-              <p>Hope the weather gets a bit nicer...</p>       
-              <p>Y'know, with more sunlight.</p>
-            </div>
-          </div>
-        </li>
-
-
-        <li><div class="tldate">Apr 2014</div></li>
-       
-        <li class="timeline-normal">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Surprising Headline Right Here</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  3 hours ago</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Lorem Ipsum and such.</p>
-            </div>
-          </div>
-        </li>
-       
-
-          <li class="timeline-inverted">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Breaking into Spring!</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  4/07/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Hope the weather gets a bit nicer...</p>
-       
-              <p>Y'know, with more sunlight.</p>
-            </div>
-          </div>
-        </li>
-
-          
-        <li><div class="tldate">Apr 2014</div></li>
-       
-
-          <li class="timeline-normal">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Surprising Headline Right Here</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  3 hours ago</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Lorem Ipsum and such.</p>
-            </div>
-          </div>
-        </li>
-
-          
-        
-          <li class="timeline-inverted">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Breaking into Spring!</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  4/07/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Hope the weather gets a bit nicer...</p>
-       
-              <p>Y'know, with more sunlight.</p>
-            </div>
-          </div>
-        </li>
-
-        
-        
-        <li class="timeline-normal">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Surprising Headline Right Here</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  3 hours ago</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Lorem Ipsum and such.</p>
-            </div>
-          </div>
-        </li>
-        
-        
-        
-        <li class="timeline-inverted">
-          <div class="tl-circ"></div>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Breaking into Spring!</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>  4/07/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Hope the weather gets a bit nicer...</p>
-       
-              <p>Y'know, with more sunlight.</p>
-            </div>
-          </div>
-        </li>
-
-        
-      </ul>
+        </ul>
+				
+				
 			</div>
-	
-			<div id="contact" class="row">
+      </div>
+	 
+			<div id="about" class="section">
+				<h1 class="page-heading">About Me</h1>
+				<div id="love-hate-chart"></div>
+			</div>
+			
+			<div id="contact" class="row section">
+				
 				<ul class="deck">
 					<li class="deck__item deck__item--facebook">
-						<a class="deck__link" href="#"><span class=
+						<a class="deck__link" href="https://www.facebook.com/mrl1605"><span class=
 						"deck__icon fontawesome-facebook"></span> <span class=
 						"deck__label">Facebook</span></a>
 					</li>
 					<li class="deck__item deck__item--github">
-						<a class="deck__link" href="#"><span class=
+						<a class="deck__link" href="https://github.com/MrL1605"><span class=
 						"deck__icon fontawesome-github"></span> <span class=
 						"deck__label">GitHub</span></a>
 					</li>
-					<li class="deck__item deck__item--twitter">
-						<a class="deck__link" href="#"><span class=
-						"deck__icon fontawesome-twitter"></span> <span class=
-						"deck__label">Twitter</span></a>
-					</li>
 					<li class="deck__item deck__item--linkedin">
-						<a class="deck__link" href="#"><span class=
-						"deck__icon fontawesome-linkedin"></span> <span class=
-						"deck__label">LinkedIn</span></a>
-					</li>
-					<li class="deck__item deck__item--pinterest">
-						<a class="deck__link" href="#"><span class=
-						"deck__icon fontawesome-pinterest"></span> <span class=
-						"deck__label">Pinterest</span></a>
+						<a class="deck__link" href="https://in.linkedin.com/pub/lalit-umbarkar/87/622/567"><span class=
+						"deck__icon fontawesome-linkedin"></span> <span class="deck__label">LinkedIn</span></a>
 					</li>
 					<li class="deck__item deck__item--googleplus">
-						<a class="deck__link" href="#"><span class=
-						"deck__icon fontawesome-google-plus"></span> <span class=
-						"deck__label">Google+</span></a>
+						<a class="deck__link" href="https://plus.google.com/+LalitUmbarkar"><span class=
+						"deck__icon fontawesome-google-plus"></span> <span class="deck__label">Google+</span></a>
 					</li>
 				</ul>
 			</div>
-		</div>
+			<h1 class="page-heading contact">Contact</h1>
 		<canvas id="graph_canvas"></canvas>
-
+	</div>
+		
 
 	</body>
-    <script type="text/javascript" src="./js/scripts.js"></script>
-		<script type="text/javascript" src="./js/draw-graph.js"></script>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+	<script type="text/javascript" src="./js/draw-graph.js"></script>
+	<script type="text/javascript" src="./js/d3.min.js"></script>
+	<script type="text/javascript" src="./js/bar-chart.js"></script>
+	<script type="text/javascript" src="./js/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="./js/highcharts.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </html>
