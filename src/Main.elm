@@ -1,46 +1,39 @@
 module Main exposing (..)
 
-import Browser
+import Browser exposing (Document)
 import Html exposing (..)
-import Html.Events exposing (..)
+import Messages exposing (Msg(..))
+import Platform.Sub as Subs
+import View exposing (bodyView)
 
 
 main =
-    Browser.sandbox { init = init, update = update, view = view }
+    Browser.document
+        { init = init
+        , update = update
+        , view = view
+        , subscriptions = \_ -> Subs.none
+        }
 
 
 type alias Model =
     Int
 
 
-init : Model
-init =
-    0
+init : String -> ( Model, Cmd Msg )
+init str =
+    ( 0, Cmd.none )
 
 
-type Msg
-    = Increment
-    | Decrement
-
-
-update : Msg -> Model -> Model
+update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Increment ->
-            model + 1
-
-        Decrement ->
-            model - 1
+        Something ->
+            ( model, Cmd.none )
 
 
-
--- VIEW
-
-
-view : Model -> Html Msg
+view : Model -> Document Msg
 view model =
-    div []
-        [ button [ onClick Decrement ] [ text "-" ]
-        , div [] [ text (String.fromInt model) ]
-        , button [ onClick Increment ] [ text "+" ]
-        ]
+    { title = "Lalit Umbarkar"
+    , body = [ bodyView ]
+    }
