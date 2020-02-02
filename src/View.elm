@@ -59,7 +59,7 @@ bodyView shortForm longForm =
             [ h2 [ class "about-heading" ] [ text "About Me" ]
             , h3 [ class "heading-subtext" ]
                 [ span [] [ text <| "I have " ]
-                , span [ title longForm ] [ text shortForm ]
+                , span [ id "exp", title longForm ] [ text shortForm ]
                 , span [] [ text " of experience as Software developer." ]
                 ]
             , h5 [] [ text "Rest of the details are up to date in following file" ]

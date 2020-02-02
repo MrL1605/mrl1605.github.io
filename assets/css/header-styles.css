@@ -73,6 +73,11 @@ canvas {
     font-size: 35pt;
 }
 
+#exp {
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
 
 #resume-btn {
     box-shadow: 0 1px 5px 1px #FFFFFF;
