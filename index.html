@@ -7,15 +7,22 @@
     <meta content="text/html" http-equiv="Content-Type">
     <meta content="Lalit Umbarkar" name="author">
     <link href="assets/css/styles.css" media="all" rel="stylesheet" type="text/css">
+    <link href="assets/css/header-styles.css" media="all" rel="stylesheet" type="text/css">
+    <link href="assets/css/social.css" media="all" rel="stylesheet" type="text/css">
+    <script src="assets/js/draw-star-field-canvas.js"></script>
 
 </head>
 <body>
 <div id="elm-content"></div>
-<script src="assets/js/elm-bundle.js"></script>
+<script src="assets/js/elm/bundle.js"></script>
 <script>
-    Elm.Main.init({
-        node: document.getElementById("elm-content"),
-        flags: ""
+    let elmApp = Elm.Main.init({
+        node: document.getElementById("elm-content")
+    });
+
+    elmApp.ports.displayCanvas.subscribe(() => {
+        let params = interstellarCanvas.init();
+        interstellarCanvas.paint(params.sfCW, params.sfCH);
     });
 </script>
 

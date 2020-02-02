@@ -16,7 +16,7 @@ main() {
   # cd to working dir
   cd $WD
   echo "Building App"
-  elm make ./src/Main.elm --output assets/js/elm-bundle.js
+  elm make ./src/Main.elm --output assets/js/elm/bundle.js
   [[ $? -ne 0 ]] && echo -e "Error Occurred while building"
 
   # Revert back to currrent working dir

@@ -1,0 +1,118 @@
+html, body, input, textarea, select, button {
+    background-color: #232423;
+}
+
+html, body, input, textarea, select, button {
+    border-color: #6d6a64;
+    color: #fffffc;
+}
+
+body {
+    margin: 0;
+}
+
+div.root {
+    position: relative;
+}
+
+div.root * {
+    font-family: 'cuyabra-Regular', sans-serif;
+}
+
+div.header {
+    height: 190%;
+    width: 100%;
+    overflow: hidden;
+    /*background-image: linear-gradient(var(--primary-accent) 70%, #03428b);*/
+    font-size: 19pt;
+}
+
+div.overlay {
+    user-select: none;
+    height: 100%;
+    width: 100%;
+}
+
+div.overlay * {
+    margin: 19px auto;
+}
+
+.head-content {
+    padding: 100px;
+}
+
+.name-heading {
+    font-size: 46pt;
+}
+
+#name {
+    font-family: 'cuyabra-Bold', sans-serif;
+    padding-left: 14px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social-ico-root {
+    position: relative;
+}
+
+.social-ico-root * {
+    padding: 3px;
+}
+
+.footer {
+    position: relative;
+    padding: 55% 100px 10% 100px;
+}
+
+.about-heading {
+    font-size: 35pt;
+}
+
+
+#resume-btn {
+    box-shadow: 0 1px 5px 1px #FFFFFF;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 12px 50px;
+    text-decoration: none;
+}
+
+#resume-btn:hover {
+    background-color: #000000;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    background-color: #282927;
+    color: #ece2d0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #393937;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #424341;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #4f4f4e;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #232423;
+}
+
+* {
+    scrollbar-color: #393937 #282927;
+}

@@ -1,106 +1,28 @@
-body { 
-	background: #333; 
-	position: relative;
-	height: 100%;
-}
 
 /** You shouldn't be reading this.
 It is a taboo to read someone else's CSS files.*/
 
 
 @font-face {
-	font-family: 'cuyabra-Bold';
-	src: url('../fonts/cuyabra-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/cuyabra-Bold.otf') format('opentype'),
-	url('../fonts/cuyabra-Bold.woff') format('woff'),
-	url('../fonts/cuyabra-Bold.ttf') format('truetype'),
-	url('../fonts/cuyabra-Bold.svg#cuyabra-Bold') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'cuyabra-Bold';
+    src: url('../fonts/cuyabra-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuyabra-Bold.otf') format('opentype'),
+    url('../fonts/cuyabra-Bold.woff') format('woff'),
+    url('../fonts/cuyabra-Bold.ttf') format('truetype'),
+    url('../fonts/cuyabra-Bold.svg#cuyabra-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'cuyabra-Regular';
-  src: url('../fonts/cuyabra-Regular.eot?#iefix') format('embedded-opentype'),  
-		url('../fonts/cuyabra-Regular.otf')  format('opentype'),
-		url('../fonts/cuyabra-Regular.woff') format('woff'), 
-		url('../fonts/cuyabra-Regular.ttf')  format('truetype'), 
-		url('../fonts/cuyabra-Regular.svg#cuyabra-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'cuyabra-Regular';
+    src: url('../fonts/cuyabra-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuyabra-Regular.otf') format('opentype'),
+    url('../fonts/cuyabra-Regular.woff') format('woff'),
+    url('../fonts/cuyabra-Regular.ttf') format('truetype'),
+    url('../fonts/cuyabra-Regular.svg#cuyabra-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-.navbar {
-	background-color: black;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 12px;
-	letter-spacing: 2.3px;
-	opacity: 0.7;
-}
-.navbar li.active{
-	background-color: aqua;
-	color: aqua;
-}
-.navbar-nav li a:hover {
-	color: #1abc9c !important;
-}
-.image-container {
-	vertical-align: top;
-	display: inline-block;
-	text-align: center;
-	font-family: 'cuyabra-Regular';
-	width: 100%;
-	height: 600px;
-	background-size: cover;
-	background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(/assets/img/close-up-of-laptop-keyboard-331684.jpg) no-repeat center right;
-}
-#prof_pic{
-	height: 128px;	
-	width: 128px;
-	margin-top: 80px;
-}
-.first-heading{
-	font-size: 35px;
-	font-family: 'cuyabra-Bold';
-}
-
-
-.tl-date{
-	padding-left: 2%;
-}
-.timeline-panel{
-  visibility : hidden;
-}
-mark{
-	background-color: lightyellow;
-	font-weight: bold;
-}
-.page-heading{
-	color: #FF3D5E;
-	text-align: center;
-	font-family: 'Unica One', sans-serif;
-	font-size: 50px;
-}
-#love-hate-chart{
-	margin-bottom: 0;
-}
-#about{
-	width: 100%;
-	height: 700px;
-	align-content: center;
-	border-top-style: solid;
-	border-top-width: thick;
-	border-top-color: #FFFFFF;
-}
-#contact{
-	max-height: 600px;
-}
-#graph_canvas{
-	background-color: #2f2f2f;
-	left: 50%;
-	width: 100%;
-	max-height: 450px;
-	z-index: 1;
-}
 

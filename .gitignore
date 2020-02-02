@@ -30,4 +30,4 @@ repl-temp-*
 
 
 # Project generated files
-assets/js/elm-bundle.js
+assets/js/elm/

@@ -2,164 +2,68 @@ module View exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Messages exposing (Msg)
+import Messages exposing (..)
 
 
-bodyView : Html Msg
-bodyView =
-    div [ attribute "data-offset" "120", attribute "data-spy" "scroll", attribute "data-target" "#navbar" ]
-        [ nav [ class "navbar navbar-default navbar-fixed-top" ] [ div [ class "container" ] [ div [ class "navbar-header" ] [ button [ attribute "aria-controls" "navbar", attribute "aria-expanded" "false", class "navbar-toggle collapsed", attribute "data-target" "#navbar", attribute "data-toggle" "collapse", type_ "button" ] [ span [ class "sr-only" ] [ text "Toggle navigation" ], span [ class "icon-bar" ] [], span [ class "icon-bar" ] [], span [ class "icon-bar" ] [] ], a [ class "navbar-brand", href "#home" ] [ text "Portfolio" ] ], div [ class "navbar-collapse collapse", id "navbar" ] [ ul [ class "nav navbar-nav navbar-right" ] [ li [] [ a [ href "#home" ] [ text "Home" ] ], li [] [ a [ href "#timeline" ] [ text "Timeline" ] ], li [] [ a [ href "#about" ] [ text "About Me" ] ], li [] [ a [ href "#contact" ] [ text "Contact" ] ] ] ] ] ]
-        , div [ id "fullpage" ]
-            [ div [ class "jumbotron section fp-section fp-table  fp-completely" ]
-                [ div [ class "image-container" ]
-                    [ h1 [] [ text "Hi" ]
-                    , h1 [ class "first-heading" ] [ text "I'm Lalit Umbarkar" ]
-                    , h3 [] [ text "I make random things, using random languages" ]
-                    , h6 [] [ text "Contact" ]
-                    , h6 [] [ text "LinedIn - Twitter - Github - Insta" ]
+bodyView : String -> String -> List (Html Msg)
+bodyView shortForm longForm =
+    [ div [ class "root" ]
+        [ div [ class "header" ]
+            [ node "canvas" [ id "starFieldCanvas" ] []
+            , node "canvas" [ id "shootingStarCanvas" ] []
+            , div [ class "overlay" ]
+                [ div [ class "head-content" ]
+                    [ span [ class "name-heading" ]
+                        [ div [] [ text "Hi" ]
+                        , div [] [ text "I'm", span [ id "name" ] [ text "Lalit Umbarkar" ] ]
+                        ]
+                    , div [ class "heading-subtext" ] [ text "I make random things, using random languages" ]
+                    , div [ class "social-ico-root lazyload" ]
+                        [ a
+                            [ class "icon icon-twitter"
+                            , href "https://twitter.com/LalitUmbarkar"
+                            , rel "noopener"
+                            , target "_blank"
+                            , title "Twitter"
+                            ]
+                            [ img [ alt "Twitter Logo", src "/assets/img/Twitter_Logo_Gray.png" ] [] ]
+                        , a
+                            [ class "icon icon-linkedin-squared"
+                            , href "https://www.linkedin.com/in/mrl1605/"
+                            , rel "noopener"
+                            , target "_blank"
+                            , title "LinkedIn"
+                            ]
+                            [ img [ alt "LinkedIn Logo", src "/assets/img/LI-In-Bug-Gray.png" ] [] ]
+                        , a
+                            [ class "icon icon-instagram"
+                            , href "https://instagram.com/lalitumbarkar"
+                            , rel "noopener"
+                            , target "_blank"
+                            , title "Instagram"
+                            ]
+                            [ img [ alt "Instagram Logo", src "/assets/img/Insta-logo-Gray.png" ] [] ]
+                        , a
+                            [ class "icon icon-github-circled"
+                            , href "https://github.com/MrL1605"
+                            , rel "noopener"
+                            , target "_blank"
+                            , title "GitHub"
+                            ]
+                            [ img [ alt "Github Logo", src "/assets/img/GitHub-Mark-Gray.png" ] [] ]
+                        ]
                     ]
                 ]
-            , div [ class "jumbotron section fp-section fp-table  fp-completely" ]
-                [ h3 [] [ text "Projects" ]
+            ]
+        , div [ class "footer" ]
+            [ h2 [ class "about-heading" ] [ text "About Me" ]
+            , h3 [ class "heading-subtext" ]
+                [ span [] [ text <| "I have " ]
+                , span [ title longForm ] [ text shortForm ]
+                , span [] [ text " of experience as Software developer." ]
                 ]
-            , div [ class "jumbotron section fp-section fp-table  fp-completely" ]
-                [ h2 [] [ text "About Me" ]
-                , h3 [] [ text "I have x (hover for exact) years of experience as Software developer"]
-                , h3 [] [ text "Email: lalit.umbarkar9@gmail.com"]
-                , h3 [] [ text "Resume" ]
-                ]
+            , h5 [] [ text "Rest of the details are up to date in following file" ]
+            , a [ id "resume-btn", target "_blank", href "https://drive.google.com/open?id=1py41snirD4cyO6F25KSuI6HC1wTCo-ks" ] [ text "RESUME" ]
             ]
         ]
-
-
-
---, div [ class "container section", id "timeline" ]
---    [ h1 [ class "page-heading" ] [ text "Timeline" ]
---    , div [ class "row" ]
---        [ ul [ class "timeline" ]
---            [ li [] [ div [ class "tldate" ] [ text "2016" ] ]
---            , li [ class "timeline-normal" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "First Published App" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Apr                                                                                                                    2016" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "I published my first                                "
---                            , mark [] [ text "Android App" ]
---                            , text "on Play Store                            "
---                            ]
---                        , p [] [ a [ href "http://bit.ly/cert_mrl" ] [ text "Coursera Courses." ] ]
---                        ]
---                    ]
---                ]
---            , li [ class "timeline-inverted" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "The First Rejection" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Feb                                                                                                                    2016" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ mark [] [ text "Microsoft" ]
---                            , text "rejected me for position at MSIDC as an Intern                            "
---                            ]
---                        ]
---                    ]
---                ]
---            , li [] [ div [ class "tldate" ] [ text "2015" ] ]
---            , li [ class "timeline-normal" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "No. Not startup this time." ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Dec                                                                                                                    2015" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "Got an Internship in                                "
---                            , mark [] [ text "Indian Oil" ]
---                            , text "as Developer. Developed Android Application to determine local IP of different stations                               of IOCL                            "
---                            ]
---                        , p [] [ text "Created a ASP.NET Web Application for local Inventory Management." ]
---                        , p [] [ text "Improvements on existing PHP application." ]
---                        ]
---                    ]
---                ]
---            , li [ class "timeline-inverted" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "Next StartUp" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Feb                                                                                                                    2015" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "Became a part of                                "
---                            , mark [] [ text "Transity" ]
---                            , text "and implemented different components of Android App with other group members.                            "
---                            ]
---                        , p [] [ text "This is where my Android skills skyrocketed." ]
---                        ]
---                    ]
---                ]
---            , li [] [ div [ class "tldate" ] [ text "2014" ] ]
---            , li [ class "timeline-inverted" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "Becoming a Startup-er" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Nov                                                                                                                    2014" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "Joined                                "
---                            , mark [] [ text "CorpsInsights" ]
---                            , text "and worked as an Analytics Engineer.                            "
---                            ]
---                        , p [] [ text "Implemented the product's backend algorithms for analyzing data." ]
---                        , p [] [ text "Worked on Python Pandas and R. Predicted customer behaviour from past data of customers                               using R package." ]
---                        ]
---                    ]
---                ]
---            , li [ class "timeline-normal" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "Becoming MTA Certified" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Sept                                                                                                                    2014" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "Obtained a certiication from Microsoft for                                "
---                            , mark [] [ text "Microsoft Technical Assistant" ]
---                            ]
---                        ]
---                    ]
---                ]
---            , li [ class "timeline-inverted" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "Year of Enlightment" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "Feb                                                                                                                    2014" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "As a Fresher in IT, I was taught                                "
---                            , mark [] [ text "C" ]
---                            , text "and                                "
---                            , mark [] [ text "C++" ]
---                            , text "as it was included in my ciriculum.                            "
---                            ]
---                        , p []
---                            [ text "I soon got fond of programming, so to start with I learned                                "
---                            , mark [] [ text "Python" ]
---                            , text "during my free hours and with it learned different coding conventions through different                                "
---                            , mark [] [ a [ href "http://bit.ly/cert_mrl" ] [ text "Coursera Courses." ] ]
---                            ]
---                        ]
---                    ]
---                ]
---            , li [] [ div [ class "tldate" ] [ text "2013" ] ]
---            , li [ class "timeline-normal" ]
---                [ div [ class "tl-circ" ] []
---                , div [ class "timeline-panel" ]
---                    [ div [ class "tl-heading" ] [ h4 [] [ text "Joined VIT" ], p [] [ small [ class "text-muted" ] [ i [ class "glyphicon glyphicon-time" ] [], i [ class "tl-date" ] [ text "May                                                                                                                    2013" ] ] ] ]
---                    , div [ class "tl-body" ]
---                        [ p []
---                            [ text "Joined                                "
---                            , mark [] [ text "Vellore Institute of Technology" ]
---                            , text "and started my career in Information Technology as a newbie.                            "
---                            ]
---                        , p [] [ text "Had a lot of fun too." ]
---                        ]
---                    ]
---                ]
---            ]
---        ]
---    ]
---, div [ class "section", id "about" ] [ h1 [ class "page-heading" ] [ text "About Me" ], div [ id "love-hate-chart" ] [] ]
---, div [ class "row section", id "contact" ] [ ul [ class "deck" ] [ li [ class "deck__item deck__item--facebook" ] [ a [ class "deck__link", href "https://www.facebook.com/mrl1605" ] [] ] ] ]
+    ]

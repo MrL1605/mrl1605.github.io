@@ -1,5 +1,7 @@
 module Messages exposing (..)
 
+import Time
+
 
 type Msg
-    = Something
+    = UpdateExperience Time.Posix
