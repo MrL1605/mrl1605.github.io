@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/icms-bulma/static/css/main.8d8b1f01.chunk.css",
+    "main.js": "/icms-bulma/static/js/main.9a02a4ca.chunk.js",
+    "main.js.map": "/icms-bulma/static/js/main.9a02a4ca.chunk.js.map",
+    "runtime~main.js": "/icms-bulma/static/js/runtime~main.0179add5.js",
+    "runtime~main.js.map": "/icms-bulma/static/js/runtime~main.0179add5.js.map",
+    "static/js/2.58228cdf.chunk.js": "/icms-bulma/static/js/2.58228cdf.chunk.js",
+    "static/js/2.58228cdf.chunk.js.map": "/icms-bulma/static/js/2.58228cdf.chunk.js.map",
+    "index.html": "/icms-bulma/index.html",
+    "precache-manifest.61c22cb2a1b9c4b721386504cb7a0621.js": "/icms-bulma/precache-manifest.61c22cb2a1b9c4b721386504cb7a0621.js",
+    "service-worker.js": "/icms-bulma/service-worker.js",
+    "static/css/main.8d8b1f01.chunk.css.map": "/icms-bulma/static/css/main.8d8b1f01.chunk.css.map"
+  }
+}

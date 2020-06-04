@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/icms/plutonium/static/css/main.b521074a.chunk.css",
+    "main.js": "/icms/plutonium/static/js/main.d5059f0d.chunk.js",
+    "main.js.map": "/icms/plutonium/static/js/main.d5059f0d.chunk.js.map",
+    "runtime~main.js": "/icms/plutonium/static/js/runtime~main.da085949.js",
+    "runtime~main.js.map": "/icms/plutonium/static/js/runtime~main.da085949.js.map",
+    "static/js/2.8caef785.chunk.js": "/icms/plutonium/static/js/2.8caef785.chunk.js",
+    "static/js/2.8caef785.chunk.js.map": "/icms/plutonium/static/js/2.8caef785.chunk.js.map",
+    "index.html": "/icms/plutonium/index.html",
+    "precache-manifest.e10d0a19ec1990402d7d820a26440ff6.js": "/icms/plutonium/precache-manifest.e10d0a19ec1990402d7d820a26440ff6.js",
+    "service-worker.js": "/icms/plutonium/service-worker.js",
+    "static/css/main.b521074a.chunk.css.map": "/icms/plutonium/static/css/main.b521074a.chunk.css.map"
+  }
+}
