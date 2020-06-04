@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "styles.css"
+  ],
+  "names": [],
+  "mappings": "AAAA,KACE,sBAAuB,CACvB,iBACF,CAEA,KACE,WACF,CAGA,wCAEE,cAAe,CACf,iBAAkB,CAClB,YAAa,CACb,qBAAsB,CACtB,WAAY,CACZ,YAAe,CACf,sBAAuB,CACvB,SAAY,CACZ,WAAY,CACZ,0BAA4B,CAC5B,wDAAoE,CACpE,iDAAqD,CACrD,UACF,CAEA,cACE,sBACF,CAEA,4EAEE,UACF,CAEA,qCAEE,aAAc,CACd,cACF,CAEA,0EAKE,UACF,CAEA,oFAEE,UAAW,CACX,UACF,CAEA,wFAEE,oBACF,CAEA,sDAEE,yCAA2C,CAC3C,aACF",
+  "file": "main.da8e8eb8.chunk.css",
+  "sourcesContent": [
+    ".App {\n  font-family: sans-serif;\n  text-align: center;\n}\n\nbody {\n  height: auto;\n}\n\n/*  Dark styles for card */\n.ui.dark.cards > .dark.card,\n.ui.dark.card {\n  max-width: 100%;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  width: 290px;\n  min-height: 0px;\n  background: @dark-bg-40;\n  padding: 0em;\n  border: none;\n  border-radius: 0.28571429rem;\n  box-shadow: 0px 1px 3px 0px @dark-bg-40, 0px 0px 0px 1px @dark-bg-40;\n  transition: box-shadow 0.1s ease, transform 0.1s ease;\n  z-index: \"\";\n}\n\n.ui.dark.card {\n  background: @dark-bg-40;\n}\n\n.ui.dark.cards > .dark.card > .content > a.header,\n.ui.dark.card > .content > a.header {\n  color: white;\n}\n\n.ui.cards > .card .meta,\n.ui.card .meta {\n  font-size: 1em;\n  color: @grey-50;\n}\n\n.ui.dark.cards > .dark.card > .content > .header,\n.ui.dark.card > .content > .header {\n  /* //display: block;\n  //margin: '';\n  //font-family: 'Roboto', 'sans-serif'; */\n  color: white;\n}\n\n.ui.dark.cards > .dark.card > .content > .description,\n.ui.dark.card > .content > .description {\n  clear: both;\n  color: white;\n}\n\n.ui.dark.cards > .dark.card > .content > a.header:hover,\n.ui.dark.card > .content > a.header:hover {\n  color: rgba(0, 0, 0, 0.8);\n}\n\n.ui.dark.cards > .dark.card > .extra,\n.ui.dark.card > .extra {\n  border-top: 1px solid @textColor !important;\n  color: inherit;\n}\n"
+  ]
+}
