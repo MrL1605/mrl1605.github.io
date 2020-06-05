@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/icms/uranium/static/css/main.b521074a.chunk.css",
+    "main.js": "/icms/uranium/static/js/main.bfb230c9.chunk.js",
+    "main.js.map": "/icms/uranium/static/js/main.bfb230c9.chunk.js.map",
+    "runtime~main.js": "/icms/uranium/static/js/runtime~main.800989d2.js",
+    "runtime~main.js.map": "/icms/uranium/static/js/runtime~main.800989d2.js.map",
+    "static/css/2.72d6b061.chunk.css": "/icms/uranium/static/css/2.72d6b061.chunk.css",
+    "static/js/2.3421389c.chunk.js": "/icms/uranium/static/js/2.3421389c.chunk.js",
+    "static/js/2.3421389c.chunk.js.map": "/icms/uranium/static/js/2.3421389c.chunk.js.map",
+    "index.html": "/icms/uranium/index.html",
+    "precache-manifest.1b96d8886d7a01e5d3d2e0ed25d083e9.js": "/icms/uranium/precache-manifest.1b96d8886d7a01e5d3d2e0ed25d083e9.js",
+    "service-worker.js": "/icms/uranium/service-worker.js",
+    "static/css/2.72d6b061.chunk.css.map": "/icms/uranium/static/css/2.72d6b061.chunk.css.map",
+    "static/css/main.b521074a.chunk.css.map": "/icms/uranium/static/css/main.b521074a.chunk.css.map"
+  }
+}
