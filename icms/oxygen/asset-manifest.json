@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/icms/oxygen/static/css/main.3e32605d.chunk.css",
+    "main.js": "/icms/oxygen/static/js/main.7fa70f30.chunk.js",
+    "main.js.map": "/icms/oxygen/static/js/main.7fa70f30.chunk.js.map",
+    "runtime~main.js": "/icms/oxygen/static/js/runtime~main.73e30eef.js",
+    "runtime~main.js.map": "/icms/oxygen/static/js/runtime~main.73e30eef.js.map",
+    "static/js/2.5a58d949.chunk.js": "/icms/oxygen/static/js/2.5a58d949.chunk.js",
+    "static/js/2.5a58d949.chunk.js.map": "/icms/oxygen/static/js/2.5a58d949.chunk.js.map",
+    "index.html": "/icms/oxygen/index.html",
+    "precache-manifest.f5908495c241583ba4f21c37e9b74c85.js": "/icms/oxygen/precache-manifest.f5908495c241583ba4f21c37e9b74c85.js",
+    "service-worker.js": "/icms/oxygen/service-worker.js",
+    "static/css/main.3e32605d.chunk.css.map": "/icms/oxygen/static/css/main.3e32605d.chunk.css.map"
+  }
+}
