@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/icms/germanium/static/css/main.9a81d2a4.chunk.css",
+    "main.js": "/icms/germanium/static/js/main.9ede135c.chunk.js",
+    "main.js.map": "/icms/germanium/static/js/main.9ede135c.chunk.js.map",
+    "runtime~main.js": "/icms/germanium/static/js/runtime~main.5afc1b81.js",
+    "runtime~main.js.map": "/icms/germanium/static/js/runtime~main.5afc1b81.js.map",
+    "static/js/2.a09b4f4f.chunk.js": "/icms/germanium/static/js/2.a09b4f4f.chunk.js",
+    "static/js/2.a09b4f4f.chunk.js.map": "/icms/germanium/static/js/2.a09b4f4f.chunk.js.map",
+    "index.html": "/icms/germanium/index.html",
+    "precache-manifest.ee31e91b564c3345ab69a705976c109c.js": "/icms/germanium/precache-manifest.ee31e91b564c3345ab69a705976c109c.js",
+    "service-worker.js": "/icms/germanium/service-worker.js",
+    "static/css/main.9a81d2a4.chunk.css.map": "/icms/germanium/static/css/main.9a81d2a4.chunk.css.map"
+  }
+}
