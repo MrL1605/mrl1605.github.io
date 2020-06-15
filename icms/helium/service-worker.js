@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/icms/helium/precache-manifest.16d655877d1363d2660aaad19b604069.js"
+  "/icms/helium/precache-manifest.f91e2cef070c3f00546ef41cab55bf42.js"
 );
 
 self.addEventListener('message', (event) => {
