@@ -6615,19 +6615,7 @@ var $author$project$View$bodyView = F2(
 								_List_Nil,
 								_List_fromArray(
 									[
-										$elm$html$Html$text('Rest of the details are up to date in following file')
-									])),
-								A2(
-								$elm$html$Html$a,
-								_List_fromArray(
-									[
-										$elm$html$Html$Attributes$id('resume-btn'),
-										$elm$html$Html$Attributes$target('_blank'),
-										$elm$html$Html$Attributes$href('https://drive.google.com/open?id=1py41snirD4cyO6F25KSuI6HC1wTCo-ks')
-									]),
-								_List_fromArray(
-									[
-										$elm$html$Html$text('RESUME')
+										$elm$html$Html$text('Feel free to connect with me on social media')
 									]))
 							]))
 					]))
